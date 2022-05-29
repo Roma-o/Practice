@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
 import Title from './Item/Title'
 import TodoItem from './Item/TodoItem'
-import CreateTodoField from './AddTodo/CreateTodoField'
+import CreateTodo from './AddTodo/CreateTodo'
 
 const data = [
   {
     _id: '1313232313',
-    title: 'Finish the essay collaboration',
+    title: 'Todo task number one',
     isCompleted: false
   },
   {
     _id: '1312332322113',
-    title: 'Read next chapter of the book',
+    title: 'Todo task number two',
     isCompleted: false
   },
   {
     _id: '131211313313',
-    title: 'Send the finished assignment',
+    title: 'TodoTodo task number three',
     isCompleted: false
   }
 ]
@@ -44,7 +44,7 @@ function Home() {
           removeTodo={removeTodo}
         />
       ))}
-      <CreateTodoField setTodos={setTodos} />
+      <CreateTodo setTodos={setTodos} />
     </div>
   )
 }

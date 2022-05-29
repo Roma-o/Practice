@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const CreateTodoField = ({ setTodos }) => {
+const CreateTodo = ({ setTodos }) => {
   const [title, setTitle] = useState('')
 
   const addTodo = title => {
@@ -29,4 +29,4 @@ const CreateTodoField = ({ setTodos }) => {
   )
 }
 
-export default CreateTodoField
+export default CreateTodo
